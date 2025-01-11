@@ -1,0 +1,313 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('../Assets/background1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.spectacole-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.spectacole-container input{
+  color: white;
+}
+
+.spectacole-container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Stilizare pentru celula datei */
+.date-cell {
+  text-align: center;
+  border: none; /* Elimină liniile de tabel */
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.date-cell .weekday {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+
+.date-cell .day {
+  font-size: 36px;
+  font-weight: bold;
+  display: block;
+  margin: 5px 0;
+}
+
+.date-cell .month-year {
+  font-size: 14px;
+  color: #ccc;
+  display: block;
+}
+
+/* Tabel spectacole */
+.spectacole-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.spectacole-table th,
+.spectacole-table td {
+  padding: 12px;
+  text-align: center;
+  color: white;
+}
+
+.spectacole-table th {
+  background-color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+
+.spectacole-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.spectacole-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Search bar */
+.search-bar {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.2); /* Transparent */
+  color: white;
+  outline: none;
+  margin-right: 20px; /* Spațiu între search-bar și buton */
+}
+
+.search-bar::placeholder {
+  color: white; /* Placeholder alb */
+  font-weight: bold; /* Text placeholder îngroșat */
+}
+
+
+/* Butoane transparente */
+.account-button, .back-button {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent */
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.account-button:hover, .back-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);}
+
+/* Spectacole.css */
+
+/* Stilizare pentru butonul Rezervările Mele */
+.rezervari-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px; /* Spațiu între butoane */
+}
+
+.rezervari-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);}
+
+/* Stilizare pentru butonul de rezervare din tabel */
+.rezerva-button {
+  background-color: transparent;
+  color: white;
+  padding: 8px 16px;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rezerva-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Aliniere butoane în navbar */
+.spectacole-container .navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Grupare butoane din dreapta */
+.navbar-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+
+/* Form container */
+.account-container {
+  margin: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black;
+}
+
+button[type="submit"] {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent */
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Aliniere butoane "Actualizează" și "Înapoi" */
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.spectacol-link {
+  text-decoration: none;
+  color: white;
+}
+
+.spectacol-link:hover {
+  color: #ddd;
+}
+
+.account-container {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-group input {
+  padding: 12px 15px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #45a049;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.4);
+}
+
+.buttons-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cont-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: #4CAF50;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cont-button:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+}
+
+.stats-card {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 10px;
+  border: 2px solid #4CAF50;
+}
+
+.stats-content {
+  text-align: center;
+}
+
+.stats-message {
+  color: #4CAF50;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stats-count {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
