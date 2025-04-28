@@ -4,8 +4,7 @@ The system presents performances in a clear table format, allowing users to make
 When users select a specific performance, they are presented with a detailed view containing essential information about the show, including real-time seat availability based on venue capacity and existing reservations.
 A notable feature is the "Similar Shows" recommendation system, which suggests performances of the same genre, enhancing the user's discovery experience. 
 The platform incorporates advanced search functionality, enabling users to quickly locate specific performances, while the user profile section offers comprehensive account management capabilities, 
-including credential modifications and a detailed overview of booking history. T
-he platform maintains a robust ranking system that showcases user engagement based on reservation frequency and ticket quantities, fostering community engagement.
+including credential modifications and a detailed overview of booking history. The platform maintains a robust ranking system that showcases user engagement based on reservation frequency and ticket quantities, fostering community engagement.
 Users can view both their personal reservations and general booking patterns across different dates, with the system maintaining real-time synchronization between the user interface and database to ensure data
 consistency and reliability. 
 The booking process accommodates both individual and group reservations, providing flexibility for different user needs. 
